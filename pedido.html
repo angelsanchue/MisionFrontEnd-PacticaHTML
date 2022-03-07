@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fresaCake-Ico.ico"/>
+    <title>Pedido</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="assets/fresaCake Logo.png" alt="Logo" width="200"></td>
+            <td style="text-align: center;">
+                <h1 style="margin-right: 300px;">Bienvenidos</h1>
+            </td>
+            <td style="padding: 10px;"><a href="Index.html">Inicio</a></td>
+            <td style="padding: 10px;"><a href="pedido.html">Haz tu pedido aquí</a></td>
+            <td style="padding: 10px;"><a href="acerca.html">Acerca de fresa Cake</a></td>
+            <td style="padding: 10px;"><a href="pastelero.html">Acceso a colaboradores</a></td>
+        </tr>
+    </table>    
+    <br>
+    <br>
+    <h1>Llena la infornación necesaria para registrar tu pedido</h1>
+    <br>
+    <br>
+    <form action="pedido.js">
+        <label for="Nombre">Nombre completo de quien recibe el pastel</label>
+        <br>
+        <input type="text" id="Nombre" placeholder="Nombre completo" name="Nombre">
+        <br>
+        <br>
+        <label for="Telefono">Número de teléfono</label>
+        <br>
+        <input type="text" id="Telefono" name="Telefono" placeholder="Tel.">
+        <br>
+        <br>
+        <label for="Correo">email</label>
+        <br>
+        <input type="text" name="Correo" id="Correo" placeholder="ejemple@email.com"> 
+        
+        <br><br>
+
+        <p>Selecciona el sabor de tu pastel:</p>
+        <select name="Pastel" id="PastelSAbor">
+            <option value="select">Selecciona un sabor</option>
+            <option value="Durazno">Pastel de durazno</option>
+            <option value="Fresa">Pastel de fresas</option>
+            <option value="Arcoiris">Pastel arcoiris</option>
+            <option value="Choco">Pastel choco-naranja</option>
+        </select><br><br>
+
+        <p>¿Deseas combinar con más fruta? Selecciona las que gustes (opcional)</p>
+        <input type="checkbox" name="Mango" id="mango"><label for="mango">Mango</label><br>
+        <input type="checkbox" name="Fresa" id="fresa"><label for="fresa">Fresas</label><br>
+        <input type="checkbox" name="Durazno" id="durazno"><label for="durazno">Durazno</label><br>
+        <input type="checkbox" name="Choco" id="chispas"><label for="chispas">Chispas de chocolate</label><br>
+
+        <p>Selecciona los que gustes (opcional)</p>
+        <input type="checkbox" name="Velas" id="velas"><label for="velas">Velitas</label><br>
+        <input type="checkbox" name="Mensaje" id="mensaje"><label for="mensaje">Mensaje de felicitación</label><br>
+        <input type="checkbox" name="Oblea" id="oblea"><label for="oblea"></label>Oblea<br>
+        <input type="checkbox" name="Suplemento" id="suplemento"><label for="suplemento">Suplemento endulzante</label><br>
+    </form>
+
+    
+</body>
+</html>
